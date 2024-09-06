@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designs</title>
+    <link href="fonts.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
+    <link href="output.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
+    <link href="designs.css?v=<?php echo time(); ?>" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="images/logoicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Lovers+Quarrel&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body onload="myloader()">
+
+    <div id="loader-wrapper" class="w-[100vw] h-[100vh] absolute z-[100] top-0 left-0 bg-white flex justify-center items-center">
+      <div id="loader" class="w-[3rem] h-[3rem] relative animate-spin-loader">
+          <div class="absolute w-[1.2rem] h-[1.2rem] bg-red-800 rounded-[50%] top-0 left-0"></div>
+          <div class="absolute w-[1.2rem] h-[1.2rem] bg-red-800 rounded-[50%] top-0 right-0"></div>
+          <div class="absolute w-[1.2rem] h-[1.2rem] bg-red-800 rounded-[50%] bottom-0 left-0"></div>
+          <div class="absolute w-[1.2rem] h-[1.2rem] bg-red-800 rounded-[50%] bottom-0 right-0"></div>
+      </div>
+    </div> 
+
+    <header class="text-gray-600 body-font mb-4">
+      <div class="container mx-auto md:mx-0 flex lg:px-5 md:px-0 flex-row items-center justify-between lg:w-full">
+          <a class="flex title-font font-medium items-center text-gray-900 mb-4 ml-5 lg:ml-0 md:mb-0 md:mr-[-1.5rem]" href="index.html">
+              <img src="images/logo-crop.png" class="lg:w-48 md:w-[9.3rem] w-36 h-auto">
+          </a>
+  
+          <div class="flex md:flex lg:hidden relative w-[40vw] overflow-hidden md:mr-[-3rem]">
+              <div id="show_menu" class="w-[40vw] h-full flex flex-col items-end">
+                  <input type="checkbox" class="peer h-10 w-10 flex flex-col justify-end items-end fixed opacity-0 z-50 cursor-pointer mr-5  duration-500 ease-in-out [&:checked~span]:bg-white"/>
+                  <span class="w-8 h-[3px] bg-red-900 opacity-0"></span>
+                  <span class="w-8 h-[3px] bg-red-900 opacity-0"></span>
+                  <span class="w-8 h-[3px] mr-5 mb-2 z-50 bg-red-800 rounded-lg"></span>
+                  <span class="w-10 h-[3px] mr-5 mb-2 z-50 bg-red-800 rounded-lg"></span>
+                  <span class="w-6 h-[3px] mr-5 mb-2 z-50 bg-red-800 rounded-lg"></span>  
+  
+                  <div id="mobile_menu" class="peer-checked:mr-[0rem] fixed md:fixed lg:hidden w-[70vw] h-full flex-col items-end bg-red-800 text-white text-2xl text-right top-0 mr-[-70vw] z-40 pt-[14rem]  duration-500 ease-in-out">
+                      <a class="block hover:cursor-pointer px-6 mb-4" href="index.html">Home</a>
+                      <a class="block hover:cursor-pointer px-6 mb-4" href="">Highlights</a>
+                      <a class="block hover:cursor-pointer px-6 mb-4" href="about.html">About</a>
+                      <a class="block hover:cursor-pointer px-6 mb-4" href="designs.html">Designs</a>
+                      <a class="block hover:cursor-pointer px-6 mb-4" href="contact.html">Contact</a>
+                  </div>
+              </div>
+          </div>
+  
+          <nav class="md:h-[5.5rem] hidden md:hidden lg:flex flex-wrap items-center justify-center text-red-800 md:text-[1rem] lg:text-[1.3rem]">
+              <a class="mr-5 md:mr-2 headerlink hover:cursor-pointer" href="index.html">Home</a>
+              <a class="mr-5 md:mr-2 headerlink hover:cursor-pointer">Highlights</a>
+              <a class="mr-5 md:mr-2 headerlink hover:cursor-pointer" href="about.html">About</a>
+              <a class="mr-5 md:mr-2 headerlink hover:cursor-pointer" href="designs.html">Designs</a>
+          </nav>
+  
+          <div class="hidden md:hidden lg:flex justify-end items-center box-border md:w-[7rem] lg:w-[9rem] lg:pr-5 md:mr-[-1.5rem] lg:mr-0">
+              <button class="btn flex items-center justify-center border-0 focus:outline-none rounded text-base md:p-[0.5rem] md:pl-[0.9rem] lg:p-[1rem] lg:pl-[1.25rem]" onclick="document.location='contact.html'">
+                  <span class="lg:text-[1.2rem] text-[1rem]">CONTACT</span>
+                  <span>
+                      <svg class="w-[2rem]" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                          <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+                          <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+                      </g>
+                      </svg>
+                  </span> 
+              </button>
+          </div>
+      </div>
+  </header>
+
+    <main>
+      <div class="flex flex-col space-y-5 lg:flex-row justify-between px-6 my-8 items-center">
+          <div class="h-full lg:text-[2.5rem] text-[2rem] text-red-800 montserrat-300 uppercase">All Products</div>
+          
+          <form class="flex justify-between items-center">
+            <input id="search-logo" type="image" id="search-logo" class="h-[1.5rem] w-[1.5rem] absolute mx-[0.75rem] opacity-50 focus:opacity-100" src="images/search_red.png">
+            <input id="search-text" class="w-[18rem] h-[3rem] lg:w-[14rem] border-2 border-[#991b1b80] rounded pl-[3rem] pr-[0.75rem] text-red-800 text-end placeholder-[#991b1b80] placeholder:text-end placeholder:focus:text-red-800 focus:border-red-800 focus:outline-none" type="text" placeholder="search">
+          </form>
+      </div>
+
+      <section class="flex">
+
+        <div class="hidden lg:block text-red-800 h-full w-[25vw] poppins-extralight text-[1.7rem] uppercase">
+          <div id="Category1" class="flex items-center justify-center">
+            <input class="h-16 w-[25vw] cursor-pointer absolute opacity-0 z-50" type="checkbox" />
+            <div id="cat1" class="flex items-center h-[4.5rem] w-[25vw] px-5 transition-all duration-400 ease-linear">Category 1</div>
+          </div>
+          <div id="Category2" class="flex items-center justify-center">
+            <input class="h-16 w-[25vw] cursor-pointer absolute opacity-0 z-50" type="checkbox" />
+            <div id="cat2" class="flex items-center h-[4.5rem] w-[25vw] px-5 transition-all duration-400 ease-linear">Category 2</div>
+          </div>
+          <div id="Category3" class="flex items-center justify-center">
+            <input class="h-16 w-[25vw] cursor-pointer absolute opacity-0 z-50" type="checkbox" />
+            <div id="cat3" class="flex items-center h-[4.5rem] w-[25vw] px-5 transition-all duration-400 ease-linear">Category 3</div>
+          </div>
+          <div id="Category4" class="flex items-center justify-center">
+            <input class="h-16 w-[25vw] cursor-pointer absolute opacity-0 z-50" type="checkbox" />
+            <div id="cat4" class="flex items-center h-[4.5rem] w-[25vw] px-5 transition-all duration-400 ease-linear">Category 4</div>
+          </div>
+          <div id="Category5" class="flex items-center justify-center">
+            <input class="h-16 w-[25vw] cursor-pointer absolute opacity-0 z-50" type="checkbox" />
+            <div id="cat5" class="flex items-center h-[4.5rem] w-[25vw] px-5 transition-all duration-400 ease-linear">Category 5</div>
+          </div>
+          <div id="Category6" class="flex items-center justify-center">
+            <input class="h-16 w-[25vw] cursor-pointer absolute opacity-0 z-50" type="checkbox" />
+            <div id="cat6" class="flex items-center h-[4.5rem] w-[25vw] px-5 transition-all duration-400 ease-linear">Category 6</div>
+          </div>
+          <div id="Category7" class="flex items-center justify-center">
+            <input class="h-16 w-[25vw] cursor-pointer absolute opacity-0 z-50" type="checkbox" />
+            <div id="cat7" class="flex items-center h-[4.5rem] w-[25vw] px-5 transition-all duration-400 ease-linear">Category 7</div>
+          </div>
+        </div>
+  
+        <section class="w-full h-full lg:w-[80%] lg:h-[70vh] overflow-x-hidden overflow-y-auto scroll-smooth">
+          <script>
+            const input1 = document.getElementById('search-logo');
+            const input2 = document.getElementById('search-text');
+  
+            input2.addEventListener('focus', () => {
+                  input1.style.opacity = '1';
+              });
+  
+              input2.addEventListener('blur', () => {
+                  input1.style.opacity = '0.5';
+              });
+          </script>
+          
+          <section>
+              <div id="grid" class="w-full h-full grid grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-10 px-6 mb-12">
+  
+                <a href="p1.php" class="w-full h-full lg:w-full lg:h-[65vh]">
+                  <div class="w-full h-[80%] lg:w-full lg:h-[90%] rounded overflow-hidden enlargeimage mb-2">
+                    <img class="h-[100%] w-[100%] object-cover object-center transition-all duration-[0.25s]" src="Product_images/p1/2.jpg" alt="">
+                  </div>
+                  <div class="w-full h-[20%] lg:w-full lg:h-[10%] flex flex-col justify-center items-center poppins-extralight">
+                    <div class="uppercase text-xl text-center text-yellow-600">Bridal Collection</div>
+                    <div>Dress #1 and name</div>
+                  </div>
+                </a>
+
+                <a href="p2.php" class="w-full h-full lg:w-full lg:h-[65vh]">
+                  <div class="w-full h-[80%] lg:w-full lg:h-[90%] rounded overflow-hidden enlargeimage mb-2">
+                    <img class="h-[100%] w-[100%] object-cover object-center transition-all duration-[0.25s]" src="Product_images/p2/1.jpg" alt="">
+                  </div>
+                  <div class="w-full h-[20%] lg:w-full lg:h-[10%] flex flex-col justify-center items-center poppins-extralight">
+                    <div class="uppercase text-xl text-center text-yellow-600">Reception Dresses</div>
+                    <div>Dress #2 and name</div>
+                  </div>
+                </a>
+  
+                <a href="p3.php" class="w-full h-full lg:w-full lg:h-[65vh]">
+                  <div class="w-full h-[80%] lg:w-full lg:h-[90%] rounded overflow-hidden enlargeimage mb-2">
+                    <img class="h-[100%] w-[100%] object-cover object-center transition-all duration-[0.25s]" src="Product_images/p3/37.jpg" alt="">
+                  </div>
+                  <div class="w-full h-[20%] lg:w-full lg:h-[10%] flex flex-col justify-center items-center poppins-extralight">
+                    <div class="uppercase text-xl text-center text-yellow-600">Bridal Collection</div>
+                    <div>Dress #3 and name</div>
+                  </div>
+                </a>
+  
+                <a href="p4.php" class="w-full h-full lg:w-full lg:h-[65vh]">
+                  <div class="w-full h-[80%] lg:w-full lg:h-[90%] rounded overflow-hidden enlargeimage mb-2">
+                    <img class="h-[100%] lg:h-auto w-[100%] object-cover object-center transition-all duration-[0.25s]" src="Product_images/p4/49.jpg" alt="">
+                  </div>
+                  <div class="w-full h-[20%] lg:w-full lg:h-[10%] flex flex-col justify-center items-center poppins-extralight">
+                    <div class="uppercase text-xl text-center text-yellow-600">Bridal Collection</div>
+                    <div>Dress #4 and name</div>
+                  </div>
+                </a>
+  
+                <a href="p5.php" class="w-full h-full lg:w-full lg:h-[65vh]">
+                  <div class="w-full h-[80%] lg:w-full lg:h-[90%] rounded overflow-hidden enlargeimage mb-2">
+                    <img class="h-[100%] lg:h-auto w-[100%] object-cover object-center transition-all duration-[0.25s]" src="Product_images/p5/58.jpg" alt="">
+                  </div>
+                  <div class="w-full h-[20%] lg:w-full lg:h-[10%] flex flex-col justify-center items-center poppins-extralight">
+                    <div class="uppercase text-xl text-center text-yellow-600">Reception Dresses</div>
+                    <div>Dress #5 and name</div>
+                  </div>
+                </a>
+  
+                <a href="p3.php" class="w-full h-full lg:w-full lg:h-[65vh]">
+                  <div class="w-full h-[80%] lg:w-full lg:h-[90%] rounded overflow-hidden enlargeimage mb-2">
+                    <img class="h-[100%] w-[100%] object-cover object-center transition-all duration-[0.25s]" src="Product_images/p3/37.jpg" alt="">
+                  </div>
+                  <div class="w-full h-[20%] lg:w-full lg:h-[10%] flex flex-col justify-center items-center poppins-extralight">
+                    <div class="uppercase text-xl text-center text-yellow-600">Bridal Collection</div>
+                    <div>Dress #3 and name</div>
+                  </div>
+                </a>
+  
+              </div>
+  
+          </section>
+        </section>
+      </section>
+
+    </main>
+
+    <footer class="h-[80vh] md:h-[65vh] lg:h-[80vh] w-[100vw] mt-20 mb-5 lg:px-10 px-5 py-10 poppins-extralight">
+    <div class="h-[75%] w-full bg-[#FAECD6] flex flex-col justify-around items-center py-16">
+      <div class="lg:px-0 px-5 capitalize text-2xl md:text-3xl lg:text-3xl text-center text-red-800">Subscribe to get latest updates in your inbox</div>
+      <div class="text-lg md:text-xl lg:text-lg text-red-800">Outfits that will talk on your behalf</div>
+      <form class="w-[70vw] md:w-auto lg:w-auto flex flex-col md:flex-row lg:flex-row md:space-x-3 lg:space-x-5" method="POST" action="#">
+        <input type="text" placeholder="Email Address"
+        class="px-6 py-3 mb-6 md:mb-0 lg:mb-0 text-red-800 bg-yellow-50 outline-none border-[1px] border-red-800 text-lg placeholder:text-red-800 rounded-sm">
+        <input type="submit" value="Subscribe" 
+        class="px-10 py-3 text-yellow-50 bg-red-900 text-lg cursor-pointer">
+      </form>
+      <div class="flex space-x-4">
+        <a href="https://www.instagram.com/creativedesign_by_janal_saloni/" target="_blank"><img class="h-5 md:h-7 w-5 md:w-7" src="images/instagram_red.png"></a>
+        <a href="https://wa.me/919099374692" target="_blank"><img class="h-5 md:h-7 w-5 md:w-7" src="images/whatsapp_red.png"></a>
+        <a href="#"><img class="h-5 md:h-7 w-5 md:w-7" src="images/facebook_red.png"></a>
+        <a href="#"><img class="h-5 md:h-7 w-5 md:w-7" src="images/linkedin_red.png"></a>
+      </div>
+    </div>
+    <div class="h-[25%] w-full bg-red-900 flex justify-between px-10 items-center poppins-extralight">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 w-[50%] md:w-[25%] lg:w-[40%] h-auto" href="index.html">
+        <img src="images/logo-crop.png" class="h-full lg:h-auto w-auto md:w-44  lg:w-48">
+      </a>
+      <div class="text-[#e2af6d] font-medium flex flex-col md:flex-row lg:flex-row justify-center items-end lg:items-center space-x-2">
+        <div class="text-right">Copyright &copy;2024</div>
+        <div class="uppercase text-right">Janal & Saloni</div>
+        <div class="text-right">&mdash; DhairyJoshi</div>
+      </div>
+    </div>
+</footer>
+
+    <script>
+      window.addEventListener("load", function()
+      {
+        document.getElementById("loader-wrapper").style.display = 'none';
+      })
+    </script>
+
+</body>
+</html>
